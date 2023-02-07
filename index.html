@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <img src="./assets/logo.svg" alt="Logo da empresa">
+            </header>
+
+            <div class="form-container">
+                <div class="form-box">
+                    <div class="form-header">
+                        <img class="logIn" src="./assets/log-in.svg" alt="log in">
+                        <h1>Faça seu login</h1>
+                    </div>
+                    <span>Entre com suas informações de cadastro.</span>
+
+                    <form class="form" action="/">
+                        <div class="form-content">
+                            <div class="form-email">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" placeholder="Digite seu e-mail" maxlength="255"
+                                    minlength="7"
+                                    pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$"
+                                    required>
+                            </div>
+                            <div class="form-password">
+                                <label class="password" for="password">Senha</label>
+                                <input type="password" name="password" id="password" placeholder="Digite sua senha"
+                                    minlength="8" maxlength="12"
+                                    pattern="(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="container-checkbox">
+                            <div class="remember">
+                                <input id="remember" type="checkbox">
+                                <label for="remember">Lembre-me</label>
+                            </div>
+                            <p>Esqueci minha senha</p>
+                        </div>
+
+                        <div class="enter">
+                            <button type="submit">ENTRAR</button>
+                            <p>Não tem uma conta? Registre-se</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <aside>
+            <div class="background-image">
+                <img src="./assets/side-image.jpg" alt="Imagem de um acampamento">
+            </div>
+        </aside>
+
+    </div>
+</body>
+
+</html>
